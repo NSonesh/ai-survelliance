@@ -1,0 +1,24 @@
+detector:
+  model: yolov5s
+  conf_threshold: 0.35
+tracking:
+  max_disappeared: 20
+  max_distance: 80
+loitering:
+  enabled: true
+  roi: [0.1, 0.6, 0.9, 0.95]
+  seconds_threshold: 15
+abandonment:
+  enabled: true
+  watch_classes: ["backpack","handbag","suitcase","book","sports ball","box","package"]
+  radius_pixels: 120
+  seconds_threshold: 12
+speed_anomaly:
+  enabled: true
+  baseline_fps_guess: 30
+  px_per_meter_guess: 50
+  speed_threshold_mps: 4.5
+output:
+  alerts_csv: outputs/alerts.csv
+  annotated_video: outputs/annotated.mp4
+  show: false
