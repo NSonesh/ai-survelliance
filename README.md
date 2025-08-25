@@ -1,4 +1,3 @@
-# ai-survelliance
 # 🚨 AI-Powered Surveillance System
 
 Anomaly detection for surveillance video using **3D Convolutional Autoencoders (CAE)** and an interactive **Streamlit dashboard**. Supports **Avenue** and **UCSD Ped1/Ped2** datasets.

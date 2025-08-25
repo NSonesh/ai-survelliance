@@ -1,0 +1,25 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Data and outputs (ignored by default)
+data/**
+outputs/**
+models/*.pt
+
+# Keep placeholder files so folders exist
+!data/Avenue/README.md
+!data/UCSD/README.md
+!outputs/.gitkeep
+
+# IDE/editor stuff
+.vscode/
+.idea/
+*.code-workspace
